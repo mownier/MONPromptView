@@ -14,6 +14,8 @@
 		DF3987201A24203A00E9091E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3987181A24203A00E9091E /* AppDelegate.m */; };
 		DF3987211A24203A00E9091E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39871B1A24203A00E9091E /* ViewController.m */; };
 		DF3987241A2422D000E9091E /* MONPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3987231A2422D000E9091E /* MONPromptView.m */; };
+		DF3987281A24272C00E9091E /* UIViewController+LayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3987271A24272C00E9091E /* UIViewController+LayoutConstraint.m */; };
+		DF39872B1A24628800E9091E /* UIView+SimplifiedAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39872A1A24628800E9091E /* UIView+SimplifiedAutolayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,10 @@
 		DF39871B1A24203A00E9091E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DF3987221A2422D000E9091E /* MONPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONPromptView.h; sourceTree = "<group>"; };
 		DF3987231A2422D000E9091E /* MONPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONPromptView.m; sourceTree = "<group>"; };
+		DF3987261A24272C00E9091E /* UIViewController+LayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LayoutConstraint.h"; sourceTree = "<group>"; };
+		DF3987271A24272C00E9091E /* UIViewController+LayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LayoutConstraint.m"; sourceTree = "<group>"; };
+		DF3987291A24628800E9091E /* UIView+SimplifiedAutolayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SimplifiedAutolayout.h"; sourceTree = "<group>"; };
+		DF39872A1A24628800E9091E /* UIView+SimplifiedAutolayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SimplifiedAutolayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				DF3987161A24203A00E9091E /* AppDelegate */,
+				DF3987251A2426FC00E9091E /* Categories */,
 				DF3987191A24203A00E9091E /* Controllers */,
 				DF39871C1A24203A00E9091E /* Resources */,
 				DF39871E1A24203A00E9091E /* Views */,
@@ -173,8 +180,19 @@
 			children = (
 				DF3987221A2422D000E9091E /* MONPromptView.h */,
 				DF3987231A2422D000E9091E /* MONPromptView.m */,
+				DF3987291A24628800E9091E /* UIView+SimplifiedAutolayout.h */,
+				DF39872A1A24628800E9091E /* UIView+SimplifiedAutolayout.m */,
 			);
 			path = MONPromptView;
+			sourceTree = "<group>";
+		};
+		DF3987251A2426FC00E9091E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DF3987261A24272C00E9091E /* UIViewController+LayoutConstraint.h */,
+				DF3987271A24272C00E9091E /* UIViewController+LayoutConstraint.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,9 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3987211A24203A00E9091E /* ViewController.m in Sources */,
+				DF39872B1A24628800E9091E /* UIView+SimplifiedAutolayout.m in Sources */,
 				DF3987241A2422D000E9091E /* MONPromptView.m in Sources */,
 				DF3987201A24203A00E9091E /* AppDelegate.m in Sources */,
 				DF3986EA1A241F4500E9091E /* main.m in Sources */,
+				DF3987281A24272C00E9091E /* UIViewController+LayoutConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
