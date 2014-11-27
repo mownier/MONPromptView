@@ -34,6 +34,30 @@ A custom simple prompt view. It consists only title and message labels, and a si
 }
 ```
 
+## Attribute Keys
+```objective-c
+// Dismiss Button Background Color
+kMONPromptViewAttribDismissButtonBackgroundColor
+
+// Dismiss Button Text Color
+kMONPromptViewAttribDismissButtonTextColor
+
+// Dismiss Button Font
+kMONPromptViewAttribDismissButtonFont
+
+// Title Text Color
+kMONPromptViewAttribTitleTextColor
+
+// Title Font
+kMONPromptViewAttribTitleFont
+
+// Messsage Text Color
+kMONPromptViewAttribMessageTextColor
+
+// Message Font
+kMONPromptViewAttribMessageFont
+```
+
 ## Delegate
 ```objective-c
 @interface ViewController : UIViewController<MONPromptViewDelegate>
