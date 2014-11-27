@@ -5,6 +5,7 @@ A custom simple prompt view. It consists only title and message labels, and a si
 ## Initialization
 ```sh
 - (void)viewDidLoad {
+<<<<<<< HEAD
     [super viewDidLoad];
     NSString *title = @"Hello, John Doe!";
     NSString *message = @"Welcome, Home.";
@@ -12,6 +13,13 @@ A custom simple prompt view. It consists only title and message labels, and a si
     MONPromptView *promptView = [[MONPromptView alloc] initWithTitle:title 
                                                              message:message 
                                                   dismissButtonTitle:dismissTitle];
+=======
+[super viewDidLoad];
+NSString *title = @"Hello, John Doe!";
+NSString *message = @"Welcome, Home.";
+NSString *dismissTitle = @"OK";
+MONPromptView *promptView = [[MONPromptView alloc] initWithTitle:title message:message dismissButtonTitle:dismissTitle];
+>>>>>>> 3316e9fdb68ece86fab666d5fe0b07497d4d1cf0
 }
 ```
 
