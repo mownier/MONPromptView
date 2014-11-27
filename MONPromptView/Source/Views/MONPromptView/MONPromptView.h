@@ -8,18 +8,32 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *kMONPromptViewAttribDismissButtonBackgroundColor;
+extern NSString *kMONPromptViewAttribDismissButtonTextColor;
+extern NSString *kMONPromptViewAttribDismissButtonFont;
+extern NSString *kMONPromptViewAttribTitleTextColor;
+extern NSString *kMONPromptViewAttribTitleFont;
+extern NSString *kMONPromptViewAttribMessageTextColor;
+extern NSString *kMONPromptViewAttribMessageFont;
+
 @protocol MONPromptViewDelegate;
 
 @interface MONPromptView : UIView
 
 @property (strong, nonatomic) id<MONPromptViewDelegate> delegate;
-@property (weak, nonatomic) NSString *title;
-@property (weak, nonatomic) NSString *message;
-@property (weak, nonatomic) NSString *dismissButtonTitle;
+
+@property (nonatomic) NSString *title;
+@property (nonatomic) NSString *message;
+@property (nonatomic) NSString *dismissButtonTitle;
 
 - (instancetype)initWithTitle:(NSString *)title
                       message:(NSString *)message
            dismissButtonTitle:(NSString *)dismissButtonTitle;
+
+- (instancetype)initWithTitle:(NSString *)title
+                      message:(NSString *)message
+           dismissButtonTitle:(NSString *)dismissButtonTitle
+                   attributes:(NSDictionary *)attributes;
 
 - (void)showInView:(UIView *)superview;
 
