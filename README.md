@@ -3,7 +3,7 @@
 A custom simple prompt view. It consists only title and message labels, and a single dismiss button where the text color and font of the two labels and the button can be customized.
 
 ## Initialization
-```sh
+```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSString *title = @"Hello, John Doe!";
@@ -16,7 +16,7 @@ A custom simple prompt view. It consists only title and message labels, and a si
 ```
 
 ## Customization
-```sh
+```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSString *title = @"Hello, John Doe!";
@@ -35,7 +35,7 @@ A custom simple prompt view. It consists only title and message labels, and a si
 ```
 
 ## Delegate
-```sh
+```objective-c
 @interface ViewController : UIViewController<MONPromptViewDelegate>
 
 @end
@@ -52,7 +52,7 @@ A custom simple prompt view. It consists only title and message labels, and a si
 @end
 ```
 ## Displaying Prompt View
-```sh
+```objective-c
 // If there is no navigation controller
 [promptView showInView:self.view];
 
