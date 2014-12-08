@@ -1,5 +1,7 @@
 # MONPromptView
 
+![MONPromptView] (https://raw.github.com/mownier/MONPromptView/master/screenshot.gif)
+
 A custom simple prompt view. It consists only title and message labels, and a single dismiss button where the text color and font of the two labels and the button can be customized.
 
 ## Initialization
